@@ -1,0 +1,219 @@
+/* ICT251 Web Technologies - Activity 2 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #12355b;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #1f6f8b;
+}
+
+nav a {
+    padding: 0.6rem 0.9rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #0d4052;
+    text-decoration: underline;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: white;
+    border: 1px solid #b8c7d9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.content-section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #1f6f8b;
+    padding-bottom: 0.4rem;
+}
+
+#hobbies {
+    background-color: #eef7fa;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gallery figure {
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid #ccd6e0;
+    border-radius: 8px;
+    background-color: #f9fbfd;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.media-item {
+    margin-bottom: 2rem;
+}
+
+video,
+audio {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0.75rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+th,
+td {
+    border: 1px solid #9eacba;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #dfeaf2;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #8fa1b3;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #1f6f8b;
+    outline-offset: 2px;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: #12355b;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #1f6f8b;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #12355b;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
